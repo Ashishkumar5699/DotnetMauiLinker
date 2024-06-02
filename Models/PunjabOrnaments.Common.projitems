@@ -18,9 +18,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Products\Silver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\ExecResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bills\ProductModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Mortgage\" />
     <Folder Include="$(MSBuildThisFileDirectory)Stock\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Bills\" />
   </ItemGroup>
 </Project>
