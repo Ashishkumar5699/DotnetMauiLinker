@@ -19,10 +19,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Response\ExecResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bills\ProductModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bills\PrintBillModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bills\GSTAmount.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Mortgage\" />
     <Folder Include="$(MSBuildThisFileDirectory)Stock\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Bills\" />
   </ItemGroup>
 </Project>
