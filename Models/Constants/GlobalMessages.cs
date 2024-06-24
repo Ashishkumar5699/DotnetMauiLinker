@@ -1,4 +1,4 @@
-﻿namespace PunjabOrnaments.Common.Constants
+﻿namespace Sonaar.Common.Constants
 {
     public static class GlobalMessages
     {

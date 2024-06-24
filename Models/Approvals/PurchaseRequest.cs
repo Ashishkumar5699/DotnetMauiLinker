@@ -1,4 +1,4 @@
-﻿namespace PunjabOrnaments.Common.Approvals
+﻿namespace Sonaar.Common.Approvals
 {
     public class PurchaseRequest
     {

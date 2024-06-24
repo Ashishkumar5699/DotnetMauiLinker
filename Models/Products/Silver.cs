@@ -1,4 +1,4 @@
-﻿namespace PunjabOrnaments.Common.Products
+﻿namespace Sonaar.Common.Products
 {
     public class Silver
     {

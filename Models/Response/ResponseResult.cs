@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace PunjabOrnaments.Common.Models.Response
+namespace Sonaar.Common.Models.Response
 {
     public class ExecResult
     {

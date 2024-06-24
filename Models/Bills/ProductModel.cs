@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PunjabOrnaments.Common.Bills
+namespace Sonaar.Common.Bills
 {
 	public class ProductModel
 	{

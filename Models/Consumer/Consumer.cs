@@ -1,4 +1,4 @@
-﻿namespace PunjabOrnaments.Common.Models.Products
+﻿namespace Sonaar.Common.Models.Products
 {
     public class Consumer
     {
