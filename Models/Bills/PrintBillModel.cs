@@ -1,7 +1,7 @@
 ﻿using System;
-using PunjabOrnaments.Common.Models.Products;
+using Sonaar.Common.Models.Products;
 
-namespace PunjabOrnaments.Common.Bills
+namespace Sonaar.Common.Bills
 {
 	public class PrintBillModel
 	{

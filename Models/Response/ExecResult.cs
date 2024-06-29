@@ -1,4 +1,4 @@
-﻿namespace PunjabOrnaments.Common.Response
+﻿namespace Sonaar.Common.Response
 {
 
     public class ExecResult<TDataType>
