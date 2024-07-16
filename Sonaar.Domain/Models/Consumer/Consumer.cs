@@ -1,4 +1,4 @@
-﻿namespace Sonaar.Common.Models.Products
+﻿namespace Sonaar.Domain.Models.Products
 {
     public class Consumer
     {

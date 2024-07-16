@@ -1,4 +1,4 @@
-﻿namespace Sonaar.Common.Products
+﻿namespace Sonaar.Domain.Products
 {
     public class Silver
     {

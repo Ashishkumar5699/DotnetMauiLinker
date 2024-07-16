@@ -16,6 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Enum\ApprovalEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Products\Gold.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Products\Silver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response\ExecResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bills\ProductModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bills\PrintBillModel.cs" />

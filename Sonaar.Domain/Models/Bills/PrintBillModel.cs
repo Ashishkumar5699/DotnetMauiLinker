@@ -1,5 +1,6 @@
 ﻿using System;
-using Sonaar.Common.Models.Products;
+using Sonaar.Domain.Bills;
+using Sonaar.Domain.Models.Products;
 
 namespace Sonaar.Common.Bills
 {

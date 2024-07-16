@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Sonaar.Common.Bills
+namespace Sonaar.Domain.Bills
 {
 	public class ProductModel
 	{
