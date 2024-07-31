@@ -1,4 +1,4 @@
-﻿namespace Sonaar.Domain.Models.Enum
+﻿namespace Sonaar.Common.Models.Enum
 {
     public enum ApprovalEnum
     {

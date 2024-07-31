@@ -1,5 +1,5 @@
 ﻿
-namespace Sonaar.Domain.Models.Products
+namespace Sonaar.Common.Models.Products
 {
     public class Gold
     {

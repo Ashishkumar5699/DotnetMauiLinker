@@ -9,6 +9,8 @@
   <ItemGroup>
     <None Remove="Helper\" />
     <None Remove="Models\Company\" />
+    <None Remove="ResponseObject\" />
+    <None Remove="Dto\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Sonaar.Common.Models.shproj" />
@@ -16,5 +18,7 @@
   <ItemGroup>
     <Folder Include="Helper\" />
     <Folder Include="Models\Company\" />
+    <Folder Include="ResponseObject\" />
+    <Folder Include="Dto\" />
   </ItemGroup>
 </Project>

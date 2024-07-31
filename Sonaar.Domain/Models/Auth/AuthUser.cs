@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Sonaar.Domain.Models.Auth
+namespace Sonaar.Common.Models.Auth
 {
     public class AuthUser
     {
