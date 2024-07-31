@@ -3,11 +3,11 @@ namespace Sonaar.Common.Bills
 {
 	public class ProductModel
 	{
-        public string? Description { get; set; }
+        public string Description { get; set; }
 
-        public string? HSN_Code { get; set; }
+        public string HSN_Code { get; set; }
 
-        public string? Purity { get; set; }
+        public string Purity { get; set; }
 
         public decimal Weight { get; set; }
 

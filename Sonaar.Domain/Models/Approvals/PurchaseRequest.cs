@@ -2,15 +2,15 @@
 {
     public class PurchaseRequest
     {
-        public string? MatelType { get; set; }
+        public string MatelType { get; set; }
 
-        public string? ItemType { get; set; }
+        public string ItemType { get; set; }
 
-        public string? Brand { get; set; }
+        public string Brand { get; set; }
 
-        public string? ManufactureId { get; set; }
+        public string ManufactureId { get; set; }
 
-        public string? ManufactureName { get; set; }
+        public string ManufactureName { get; set; }
 
         public double GrossWeight { get; set; }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/Maui-Application/Common/Sonaar.Domain/Sonaar.Domain.csproj": {}
+    "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/DotnetService/Common/Sonaar.Domain/Sonaar.Domain.csproj": {}
   },
   "projects": {
-    "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/Maui-Application/Common/Sonaar.Domain/Sonaar.Domain.csproj": {
+    "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/DotnetService/Common/Sonaar.Domain/Sonaar.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/Maui-Application/Common/Sonaar.Domain/Sonaar.Domain.csproj",
+        "projectUniqueName": "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/DotnetService/Common/Sonaar.Domain/Sonaar.Domain.csproj",
         "projectName": "Sonaar.Domain",
-        "projectPath": "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/Maui-Application/Common/Sonaar.Domain/Sonaar.Domain.csproj",
+        "projectPath": "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/DotnetService/Common/Sonaar.Domain/Sonaar.Domain.csproj",
         "packagesPath": "/Users/qss/.nuget/packages/",
-        "outputPath": "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/Maui-Application/Common/Sonaar.Domain/obj/",
+        "outputPath": "/Users/qss/Desktop/LiveRepo/PunjabOrnaments/DotnetService/Common/Sonaar.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/qss/.nuget/NuGet/NuGet.Config"
