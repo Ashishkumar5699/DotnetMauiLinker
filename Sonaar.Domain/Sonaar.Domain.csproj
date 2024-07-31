@@ -8,11 +8,13 @@
 
   <ItemGroup>
     <None Remove="Helper\" />
+    <None Remove="Models\Company\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Sonaar.Common.Models.shproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helper\" />
+    <Folder Include="Models\Company\" />
   </ItemGroup>
 </Project>
