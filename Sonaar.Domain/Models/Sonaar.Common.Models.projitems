@@ -6,7 +6,7 @@
     <SharedGUID>601197a7-76e1-4c88-b263-d3f0ecf85c4c</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>PunjabOrnaments.Common</Import_RootNamespace>
+    <Import_RootNamespace>Sonaar.Common.Models</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Approvals\PurchaseRequest.cs" />
@@ -16,7 +16,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Enum\ApprovalEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Products\Gold.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Products\Silver.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Response\ExecResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\ResponseResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bills\ProductModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bills\PrintBillModel.cs" />
