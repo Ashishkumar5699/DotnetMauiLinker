@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Sonaar.Domain.Models.Auth;
 
 namespace Sonaar.Domain.Dto
 {

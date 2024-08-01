@@ -1,12 +1,14 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Sonaar.Common.Models.Response
+namespace Sonaar.Domain.Models.Response
 {
     public class ExecResult
     {
         public bool HasErrors { get; set; }
+
         public bool IsSystemError { get; set; }
-        public string? Message { get; set; }
+
+        public string Message { get; set; }
     }
 
     public class ResponseResult<TDataType> : ExecResult

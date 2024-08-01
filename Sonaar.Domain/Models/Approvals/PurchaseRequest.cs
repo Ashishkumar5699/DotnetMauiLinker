@@ -1,4 +1,4 @@
-﻿namespace Sonaar.Common.Approvals
+﻿namespace Sonaar.Domain.Approvals
 {
     public class PurchaseRequest
     {
