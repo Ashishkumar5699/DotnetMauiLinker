@@ -22,4 +22,8 @@
     <Folder Include="Dto\" />
     <Folder Include="Enum\" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
 </Project>
