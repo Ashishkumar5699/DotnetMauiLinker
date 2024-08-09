@@ -1,4 +1,4 @@
-﻿namespace Sonaar.Common.Models.Products
+﻿namespace Sonaar.Domain.Models.Products
 {
     public class Consumer
     {
@@ -21,5 +21,15 @@
         public string CustmorState { get; set; }
 
         public string CustmorPinCode { get; set; }
+
+        public string AdharNumber { get; set; }
+
+        public string PanNumber { get; set; }
+
+        public string CustmorGSTNumber { get; set; }
+
+        public string CustmorCountry { get; set; }
+
+        public string CustmorZipCode { get; set; }
     }
 }

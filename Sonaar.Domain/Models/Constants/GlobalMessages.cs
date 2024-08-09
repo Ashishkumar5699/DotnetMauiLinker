@@ -1,4 +1,4 @@
-﻿namespace Sonaar.Common.Constants
+﻿namespace Sonaar.Domain.Constants
 {
     public static class GlobalMessages
     {
