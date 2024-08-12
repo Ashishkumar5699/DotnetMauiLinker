@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Sonaar.Domain.Models.Response
+namespace Sonaar.Domain.Response
 {
     public class ExecResult
     {

@@ -1,4 +1,4 @@
-﻿using Sonaar.Domain.Dto;
+﻿using Sonaar.Domain.Dto.Authentication;
 
 namespace Sonaar.Domain.ResponseObject
 {
