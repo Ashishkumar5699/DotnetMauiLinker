@@ -1,12 +1,11 @@
-﻿using System;
-using Sonaar.Domain.Models.Products;
-using Sonaar.Domain.Enum;
+﻿using Sonaar.Domain.Enum;
 using Sonaar.Domain.Models.Company;
 using Sonaar.Domain.Bills;
+using Sonaar.Domain.Dto.CustomerDirectory;
 
-namespace Sonaar.Domain.Dto
+namespace Sonaar.Domain.Dto.ReportGeneration
 {
-	public class PrintBillDto
+    public class PrintBillDto
 	{
         public int Billid { get; set; }
 
@@ -16,7 +15,7 @@ namespace Sonaar.Domain.Dto
 
         public FirmDetail FirmDetail { get; set; }
 
-        public required Consumer Consumer { get; set; }
+        public required ConsumerDTO Consumer { get; set; }
 
         public required List<ProductModel> ProductList { get; set; }
 

@@ -11,6 +11,10 @@
     <None Remove="Models\Company\" />
     <None Remove="ResponseObject\" />
     <None Remove="Dto\" />
+    <None Remove="Dto\Authentication\" />
+    <None Remove="Dto\ReportGeneration\" />
+    <None Remove="Dto\CustomerDirectory\" />
+    <None Remove="Response\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Sonaar.Common.Models.shproj" />
@@ -21,5 +25,9 @@
     <Folder Include="ResponseObject\" />
     <Folder Include="Dto\" />
     <Folder Include="Enum\" />
+    <Folder Include="Dto\Authentication\" />
+    <Folder Include="Dto\ReportGeneration\" />
+    <Folder Include="Dto\CustomerDirectory\" />
+    <Folder Include="Response\" />
   </ItemGroup>
 </Project>

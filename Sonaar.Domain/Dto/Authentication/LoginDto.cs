@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Sonaar.Domain.Dto
+namespace Sonaar.Domain.Dto.Authentication
 {
 	public class LoginDto
     {
