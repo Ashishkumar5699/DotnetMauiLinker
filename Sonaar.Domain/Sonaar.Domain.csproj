@@ -15,6 +15,9 @@
     <None Remove="Dto\ReportGeneration\" />
     <None Remove="Dto\CustomerDirectory\" />
     <None Remove="Response\" />
+    <None Remove="Entities\" />
+    <None Remove="Entities\Contacts\" />
+    <None Remove="Mapper\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Sonaar.Common.Models.shproj" />
@@ -29,6 +32,9 @@
     <Folder Include="Dto\ReportGeneration\" />
     <Folder Include="Dto\CustomerDirectory\" />
     <Folder Include="Response\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Contacts\" />
+    <Folder Include="Mapper\" />
   </ItemGroup>
   
   <ItemGroup>
