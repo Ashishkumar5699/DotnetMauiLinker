@@ -8,7 +8,7 @@ namespace Sonaar.Domain.Response
 
         public bool IsSystemError { get; set; }
 
-        public string Message { get; set; }
+        public string Message { get; set; } = "Sucess";
     }
 
     public class ResponseResult<TDataType> : ExecResult
