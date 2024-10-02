@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Sonaar.Domain.Bills
 {
-	public class GSTAmount
+    public class GSTAmount
     {
         public decimal Discount { get; set; }
 

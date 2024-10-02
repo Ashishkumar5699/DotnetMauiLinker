@@ -18,6 +18,10 @@
     <None Remove="Entities\" />
     <None Remove="Entities\Contacts\" />
     <None Remove="Mapper\" />
+    <None Remove="Entities\Quotations\" />
+    <None Remove="Entities\Product\" />
+    <None Remove="Data Context\" />
+    <None Remove="Entities\Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Sonaar.Common.Models.shproj" />
@@ -35,9 +39,15 @@
     <Folder Include="Entities\" />
     <Folder Include="Entities\Contacts\" />
     <Folder Include="Mapper\" />
+    <Folder Include="Entities\Quotations\" />
+    <Folder Include="Entities\Product\" />
+    <Folder Include="Data Context\" />
+    <Folder Include="Entities\Authentication\" />
   </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.1.24451.1" />-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.1.24451.1" />
   </ItemGroup>
 </Project>

@@ -4,9 +4,9 @@ namespace Sonaar.Domain.Response
 {
     public class ExecResult
     {
-        public bool HasErrors { get; set; }
+        public bool HasErrors { get; set; }//Server side error
 
-        public bool IsSystemError { get; set; }
+        public bool IsSystemError { get; set; } //Client side error (UI)
 
         public string Message { get; set; } = "Sucess";
     }
