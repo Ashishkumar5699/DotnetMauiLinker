@@ -18,6 +18,10 @@
     <None Remove="Entities\" />
     <None Remove="Entities\Contacts\" />
     <None Remove="Mapper\" />
+    <None Remove="Entities\Quotations\" />
+    <None Remove="Entities\Product\" />
+    <None Remove="Entities\Authentication\" />
+    <None Remove="Data Contexts\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Sonaar.Common.Models.shproj" />
@@ -35,9 +39,24 @@
     <Folder Include="Entities\" />
     <Folder Include="Entities\Contacts\" />
     <Folder Include="Mapper\" />
+    <Folder Include="Entities\Quotations\" />
+    <Folder Include="Entities\Product\" />
+    <Folder Include="Entities\Authentication\" />
+    <Folder Include="Data Contexts\" />
   </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.1.24451.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-rc.1.24451.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0-rc.1.24451.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-rc.1.24451.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-rc.1.24451.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
