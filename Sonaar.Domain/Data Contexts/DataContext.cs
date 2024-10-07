@@ -6,7 +6,7 @@ using Sonaar.Domain.Models.Products;
 using Microsoft.EntityFrameworkCore;
 using Sonaar.Domain.Entities.Authentication;
 
-namespace Sonaar.Domain.DataContext
+namespace Sonaar.Domain.DataContexts
 {
     public class DataContext : DbContext
     {
@@ -14,9 +14,9 @@ namespace Sonaar.Domain.DataContext
         {
         }
         public DbSet<AppUser> Users { get; set; }
-        public DbSet<Gold> GoldStock { get; set; }
+        //public DbSet<Gold> GoldStock { get; set; }
 
-        public DbSet<PurchaseRequest> PurchaseRequests { get; set; }
+        //public DbSet<PurchaseRequest> PurchaseRequests { get; set; }
 
         public DbSet<ContactDetails> ContactDetails { get; set; }
 
