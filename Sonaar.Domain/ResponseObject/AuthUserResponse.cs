@@ -6,8 +6,6 @@ namespace Sonaar.Domain.ResponseObject
     {
         public string Token { get; set; }
 
-        public string Device { get; set; } = "Mobile";
-
         public DateTime LoginTime { get; set; }
     }
 }
