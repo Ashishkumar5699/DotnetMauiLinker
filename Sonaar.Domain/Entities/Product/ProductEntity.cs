@@ -13,7 +13,7 @@ namespace Sonaar.Domain.Entities.Product
 
         public int QuotationId { get; set; } // Foreign key for Quotation
 
-        //[JsonIgnore]
+        [JsonIgnore]
         public Quotation Quotation { get; set; } // Navigation property
     }
 }
