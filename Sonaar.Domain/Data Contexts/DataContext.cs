@@ -1,12 +1,8 @@
-﻿using Sonaar.Domain.Approvals;
-using Sonaar.Domain.Entities.Contacts;
+﻿using Sonaar.Domain.Entities.Contacts;
 using Sonaar.Domain.Entities.Product;
 using Sonaar.Domain.Entities.Quotations;
-using Sonaar.Domain.Models.Products;
 using Microsoft.EntityFrameworkCore;
 using Sonaar.Domain.Entities.Authentication;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal;
-using Sonaar.Domain.Entities.PreSale;
 
 namespace Sonaar.Domain.DataContexts
 {
@@ -23,13 +19,18 @@ namespace Sonaar.Domain.DataContexts
 
         public DbSet<ProductEntity> Products { get; set; }
 
-        public DbSet<PreSaleEntity> PreSaleEntities { get; set; }
+        public DbSet<Entities.PreSale.PreSaleEntity> PreSaleEntities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Quotation>()
             .HasMany(q => q.ProductList)
             .WithOne(p => p.Quotation)
+            .HasForeignKey(p => p.QuotationId);
+
+             modelBuilder.Entity<Entities.PreSale.PreSaleEntity>()
+            .HasMany(q => q.ProductList)
+            .WithOne(p => p.PreSaleEntity)
             .HasForeignKey(p => p.QuotationId);
         }
     }

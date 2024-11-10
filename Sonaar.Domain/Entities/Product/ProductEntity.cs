@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using Sonaar.Domain.Bills;
+using Sonaar.Domain.Entities.PreSale;
 using Sonaar.Domain.Entities.Quotations;
 
 namespace Sonaar.Domain.Entities.Product
@@ -15,6 +16,9 @@ namespace Sonaar.Domain.Entities.Product
 
         [JsonIgnore]
         public Quotation Quotation { get; set; } // Navigation property
+
+        [JsonIgnore]
+        public PreSaleEntity PreSaleEntity { get; set; } // Navigation property
     }
 }
 

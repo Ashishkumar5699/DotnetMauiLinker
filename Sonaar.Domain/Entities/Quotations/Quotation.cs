@@ -10,6 +10,7 @@ namespace Sonaar.Domain.Entities.Quotations
     {
         [Key]
         public int QuotationId { get; set; }
+        
 
         public int Billid { get; set; }//random
 
