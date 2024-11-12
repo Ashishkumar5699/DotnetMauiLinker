@@ -9,13 +9,33 @@ namespace Sonaar.Domain.Bills
 
         public string Purity { get; set; }
 
-        public decimal Weight { get; set; }
+        private decimal _weight; 
+        public decimal Weight 
+        {
+            get => Math.Round(_weight,2);
+            set => _weight = Math.Round(_weight, 0);
+        }
 
-        public decimal Rate { get; set; }
+        private decimal _rate; 
+        public decimal Rate 
+        { 
+            get => Math.Round(_rate,2);
+            set => _weight = Math.Round(_rate, 0);
+        }
 
-        public decimal Making_Charge { get; set; }
+        private decimal _making_Charge; 
+        public decimal Making_Charge 
+        { 
+            get => Math.Round(_making_Charge,2);
+            set => _weight = Math.Round(_making_Charge, 0);
+        }
 
-        public decimal Amount { get; set; }
+        private decimal _amount;
+        public decimal Amount 
+        { 
+            get => Math.Round(_amount,2);
+            set => _weight = Math.Round(_amount, 0);
+        }
     }
 }
 
