@@ -21,6 +21,8 @@ namespace Sonaar.Domain.DataContexts
 
         public DbSet<Entities.PreSale.PreSaleEntity> PreSaleEntities { get; set; }
 
+        public DbSet<Entities.Global.FirmEntities> FirmEntities { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Quotation>()
