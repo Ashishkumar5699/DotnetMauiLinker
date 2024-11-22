@@ -1,0 +1,1208 @@
+{
+	"info": {
+		"_postman_id": "ee3d6cc5-9f18-4544-bffb-6982fd2f0888",
+		"name": "Sonaar.Service.APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36485168"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "register",
+							"item": [
+								{
+									"name": "/api/Account/register",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"userName\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Account/register"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"password\": \"<string>\",\n  \"userName\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Account/register"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"password\": \"<string>\",\n    \"userName\": \"<string>\",\n    \"device\": \"<string>\",\n    \"token\": \"<string>\",\n    \"loginTime\": \"<dateTime>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "/api/Account/login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"device\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Account/login"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"password\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"device\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Account/login"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"password\": \"<string>\",\n    \"userName\": \"<string>\",\n    \"device\": \"<string>\",\n    \"token\": \"<string>\",\n    \"loginTime\": \"<dateTime>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Contacts",
+					"item": [
+						{
+							"name": "AddContacts",
+							"item": [
+								{
+									"name": "/api/Contacts/AddContacts",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"contactPrifix\": \"<string>\",\n  \"contactFirstName\": \"<string>\",\n  \"contactLastName\": \"<string>\",\n  \"contactPhoneNumber\": \"<string>\",\n  \"contactAddress1\": \"<string>\",\n  \"contactAddress2\": \"<string>\",\n  \"contactLandMark\": \"<string>\",\n  \"contactCity\": \"<string>\",\n  \"contactState\": \"<string>\",\n  \"contactPinCode\": \"<string>\",\n  \"adharNumber\": \"<string>\",\n  \"panNumber\": \"<string>\",\n  \"custmorGSTNumber\": \"<string>\",\n  \"custmorCountry\": \"<string>\",\n  \"custmorZipCode\": \"<string>\",\n  \"contactType\": 3\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Contacts/AddContacts"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"contactPrifix\": \"<string>\",\n  \"contactFirstName\": \"<string>\",\n  \"contactLastName\": \"<string>\",\n  \"contactPhoneNumber\": \"<string>\",\n  \"contactAddress1\": \"<string>\",\n  \"contactAddress2\": \"<string>\",\n  \"contactLandMark\": \"<string>\",\n  \"contactCity\": \"<string>\",\n  \"contactState\": \"<string>\",\n  \"contactPinCode\": \"<string>\",\n  \"adharNumber\": \"<string>\",\n  \"panNumber\": \"<string>\",\n  \"custmorGSTNumber\": \"<string>\",\n  \"custmorCountry\": \"<string>\",\n  \"custmorZipCode\": \"<string>\",\n  \"contactType\": 3\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Contacts/AddContacts"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"contactPrifix\": \"<string>\",\n    \"contactFirstName\": \"<string>\",\n    \"contactLastName\": \"<string>\",\n    \"contactPhoneNumber\": \"<string>\",\n    \"contactAddress1\": \"<string>\",\n    \"contactAddress2\": \"<string>\",\n    \"contactLandMark\": \"<string>\",\n    \"contactCity\": \"<string>\",\n    \"contactState\": \"<string>\",\n    \"contactPinCode\": \"<string>\",\n    \"adharNumber\": \"<string>\",\n    \"panNumber\": \"<string>\",\n    \"custmorGSTNumber\": \"<string>\",\n    \"custmorCountry\": \"<string>\",\n    \"custmorZipCode\": \"<string>\",\n    \"contactType\": 1\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetAllContacts",
+							"item": [
+								{
+									"name": "/api/Contacts/GetAllContacts",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": "{{baseUrl}}/api/Contacts/GetAllContacts"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": "{{baseUrl}}/api/Contacts/GetAllContacts"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"contactPrifix\": \"<string>\",\n      \"contactFirstName\": \"<string>\",\n      \"contactLastName\": \"<string>\",\n      \"contactPhoneNumber\": \"<string>\",\n      \"contactAddress1\": \"<string>\",\n      \"contactAddress2\": \"<string>\",\n      \"contactLandMark\": \"<string>\",\n      \"contactCity\": \"<string>\",\n      \"contactState\": \"<string>\",\n      \"contactPinCode\": \"<string>\",\n      \"adharNumber\": \"<string>\",\n      \"panNumber\": \"<string>\",\n      \"custmorGSTNumber\": \"<string>\",\n      \"custmorCountry\": \"<string>\",\n      \"custmorZipCode\": \"<string>\",\n      \"contactType\": 0,\n      \"contactId\": \"<integer>\"\n    },\n    {\n      \"contactPrifix\": \"<string>\",\n      \"contactFirstName\": \"<string>\",\n      \"contactLastName\": \"<string>\",\n      \"contactPhoneNumber\": \"<string>\",\n      \"contactAddress1\": \"<string>\",\n      \"contactAddress2\": \"<string>\",\n      \"contactLandMark\": \"<string>\",\n      \"contactCity\": \"<string>\",\n      \"contactState\": \"<string>\",\n      \"contactPinCode\": \"<string>\",\n      \"adharNumber\": \"<string>\",\n      \"panNumber\": \"<string>\",\n      \"custmorGSTNumber\": \"<string>\",\n      \"custmorCountry\": \"<string>\",\n      \"custmorZipCode\": \"<string>\",\n      \"contactType\": 0,\n      \"contactId\": \"<integer>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetContactswithPhone",
+							"item": [
+								{
+									"name": "/api/Contacts/GetContactswithPhone",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Contacts/GetContactswithPhone?phone=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Contacts",
+												"GetContactswithPhone"
+											],
+											"query": [
+												{
+													"key": "phone",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Contacts/GetContactswithPhone?phone=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Contacts",
+														"GetContactswithPhone"
+													],
+													"query": [
+														{
+															"key": "phone",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": {\n    \"contactPrifix\": \"<string>\",\n    \"contactFirstName\": \"<string>\",\n    \"contactLastName\": \"<string>\",\n    \"contactPhoneNumber\": \"<string>\",\n    \"contactAddress1\": \"<string>\",\n    \"contactAddress2\": \"<string>\",\n    \"contactLandMark\": \"<string>\",\n    \"contactCity\": \"<string>\",\n    \"contactState\": \"<string>\",\n    \"contactPinCode\": \"<string>\",\n    \"adharNumber\": \"<string>\",\n    \"panNumber\": \"<string>\",\n    \"custmorGSTNumber\": \"<string>\",\n    \"custmorCountry\": \"<string>\",\n    \"custmorZipCode\": \"<string>\",\n    \"contactType\": 1,\n    \"contactId\": \"<integer>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "FirmManagement",
+					"item": [
+						{
+							"name": "AddFirmData",
+							"item": [
+								{
+									"name": "/api/FirmManagement/AddFirmData",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firmAddress\": \"<string>\",\n  \"firmGSTNumber\": \"<string>\",\n  \"firmName\": \"<string>\",\n  \"firmPhoneNumber\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/FirmManagement/AddFirmData"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"firmAddress\": \"<string>\",\n  \"firmGSTNumber\": \"<string>\",\n  \"firmName\": \"<string>\",\n  \"firmPhoneNumber\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/FirmManagement/AddFirmData"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "<boolean>"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "UpdateFirmData",
+							"item": [
+								{
+									"name": "/api/FirmManagement/UpdateFirmData",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": "{{baseUrl}}/api/FirmManagement/UpdateFirmData"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": "{{baseUrl}}/api/FirmManagement/UpdateFirmData"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetAllFirmData",
+							"item": [
+								{
+									"name": "/api/FirmManagement/GetAllFirmData",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{baseUrl}}/api/FirmManagement/GetAllFirmData"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": "{{baseUrl}}/api/FirmManagement/GetAllFirmData"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetFirmDataByID",
+							"item": [
+								{
+									"name": "/api/FirmManagement/GetFirmDataByID",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/FirmManagement/GetFirmDataByID?firmID=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"FirmManagement",
+												"GetFirmDataByID"
+											],
+											"query": [
+												{
+													"key": "firmID",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/FirmManagement/GetFirmDataByID?firmID=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"FirmManagement",
+														"GetFirmDataByID"
+													],
+													"query": [
+														{
+															"key": "firmID",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"firmAddress\": \"<string>\",\n  \"firmGSTNumber\": \"<string>\",\n  \"firmName\": \"<string>\",\n  \"firmPhoneNumber\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Pdf",
+					"item": [
+						{
+							"name": "GeneratePDFGPT",
+							"item": [
+								{
+									"name": "/api/Pdf/GeneratePDFGPT",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"consumer\": {\n    \"contactPrifix\": \"<string>\",\n    \"contactFirstName\": \"<string>\",\n    \"contactLastName\": \"<string>\",\n    \"contactPhoneNumber\": \"<string>\",\n    \"contactAddress1\": \"<string>\",\n    \"contactAddress2\": \"<string>\",\n    \"contactLandMark\": \"<string>\",\n    \"contactCity\": \"<string>\",\n    \"contactState\": \"<string>\",\n    \"contactPinCode\": \"<string>\",\n    \"adharNumber\": \"<string>\",\n    \"panNumber\": \"<string>\",\n    \"custmorGSTNumber\": \"<string>\",\n    \"custmorCountry\": \"<string>\",\n    \"custmorZipCode\": \"<string>\",\n    \"contactType\": 1\n  },\n  \"gstAmount\": {\n    \"discount\": \"<double>\",\n    \"totalAfterDiscount\": \"<double>\",\n    \"cgSt\": \"<double>\",\n    \"sgst\": \"<double>\",\n    \"igst\": \"<double>\",\n    \"grandTotal\": \"<double>\",\n    \"totalBeforeDiscount\": \"<double>\"\n  },\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 1,\n  \"dateofBill\": \"<dateTime>\",\n  \"firmDetail\": {\n    \"firmAddress\": \"<string>\",\n    \"firmGSTNumber\": \"<string>\",\n    \"firmName\": \"<string>\",\n    \"firmPhoneNumber\": \"<string>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Pdf/GeneratePDFGPT"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"consumer\": {\n    \"contactPrifix\": \"<string>\",\n    \"contactFirstName\": \"<string>\",\n    \"contactLastName\": \"<string>\",\n    \"contactPhoneNumber\": \"<string>\",\n    \"contactAddress1\": \"<string>\",\n    \"contactAddress2\": \"<string>\",\n    \"contactLandMark\": \"<string>\",\n    \"contactCity\": \"<string>\",\n    \"contactState\": \"<string>\",\n    \"contactPinCode\": \"<string>\",\n    \"adharNumber\": \"<string>\",\n    \"panNumber\": \"<string>\",\n    \"custmorGSTNumber\": \"<string>\",\n    \"custmorCountry\": \"<string>\",\n    \"custmorZipCode\": \"<string>\",\n    \"contactType\": 1\n  },\n  \"gstAmount\": {\n    \"discount\": \"<double>\",\n    \"totalAfterDiscount\": \"<double>\",\n    \"cgSt\": \"<double>\",\n    \"sgst\": \"<double>\",\n    \"igst\": \"<double>\",\n    \"grandTotal\": \"<double>\",\n    \"totalBeforeDiscount\": \"<double>\"\n  },\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 1,\n  \"dateofBill\": \"<dateTime>\",\n  \"firmDetail\": {\n    \"firmAddress\": \"<string>\",\n    \"firmGSTNumber\": \"<string>\",\n    \"firmName\": \"<string>\",\n    \"firmPhoneNumber\": \"<string>\"\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Pdf/GeneratePDFGPT"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GenerateQuotation",
+							"item": [
+								{
+									"name": "/api/Pdf/GenerateQuotation",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"consumerID\": \"<integer>\",\n  \"firmid\": \"<integer>\",\n  \"gstAmountID\": \"<integer>\",\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 2\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Pdf/GenerateQuotation"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"consumerID\": \"<integer>\",\n  \"firmid\": \"<integer>\",\n  \"gstAmountID\": \"<integer>\",\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 2\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Pdf/GenerateQuotation"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "PreSale",
+					"item": [
+						{
+							"name": "CreatePreSale",
+							"item": [
+								{
+									"name": "/api/PreSale/CreatePreSale",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/PreSale/CreatePreSale?QuotationId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PreSale",
+												"CreatePreSale"
+											],
+											"query": [
+												{
+													"key": "QuotationId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/PreSale/CreatePreSale?QuotationId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"PreSale",
+														"CreatePreSale"
+													],
+													"query": [
+														{
+															"key": "QuotationId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "DeletePreSale",
+							"item": [
+								{
+									"name": "/api/PreSale/DeletePreSale",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": "{{baseUrl}}/api/PreSale/DeletePreSale"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": "{{baseUrl}}/api/PreSale/DeletePreSale"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetAllPreSales",
+							"item": [
+								{
+									"name": "/api/PreSale/GetAllPreSales",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{baseUrl}}/api/PreSale/GetAllPreSales"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": "{{baseUrl}}/api/PreSale/GetAllPreSales"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "UpdatePreSale",
+							"item": [
+								{
+									"name": "/api/PreSale/UpdatePreSale",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": "{{baseUrl}}/api/PreSale/UpdatePreSale"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": "{{baseUrl}}/api/PreSale/UpdatePreSale"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Quotation",
+					"item": [
+						{
+							"name": "CreateQuotation",
+							"item": [
+								{
+									"name": "/api/Quotation/CreateQuotation",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"consumer\": {\n    \"contactPrifix\": \"<string>\",\n    \"contactFirstName\": \"<string>\",\n    \"contactLastName\": \"<string>\",\n    \"contactPhoneNumber\": \"<string>\",\n    \"contactAddress1\": \"<string>\",\n    \"contactAddress2\": \"<string>\",\n    \"contactLandMark\": \"<string>\",\n    \"contactCity\": \"<string>\",\n    \"contactState\": \"<string>\",\n    \"contactPinCode\": \"<string>\",\n    \"adharNumber\": \"<string>\",\n    \"panNumber\": \"<string>\",\n    \"custmorGSTNumber\": \"<string>\",\n    \"custmorCountry\": \"<string>\",\n    \"custmorZipCode\": \"<string>\",\n    \"contactType\": 1\n  },\n  \"gstAmount\": {\n    \"discount\": \"<double>\",\n    \"totalAfterDiscount\": \"<double>\",\n    \"cgSt\": \"<double>\",\n    \"sgst\": \"<double>\",\n    \"igst\": \"<double>\",\n    \"grandTotal\": \"<double>\",\n    \"totalBeforeDiscount\": \"<double>\"\n  },\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 1,\n  \"dateofBill\": \"<dateTime>\",\n  \"firmDetail\": {\n    \"firmAddress\": \"<string>\",\n    \"firmGSTNumber\": \"<string>\",\n    \"firmName\": \"<string>\",\n    \"firmPhoneNumber\": \"<string>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Quotation/CreateQuotation"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"consumer\": {\n    \"contactPrifix\": \"<string>\",\n    \"contactFirstName\": \"<string>\",\n    \"contactLastName\": \"<string>\",\n    \"contactPhoneNumber\": \"<string>\",\n    \"contactAddress1\": \"<string>\",\n    \"contactAddress2\": \"<string>\",\n    \"contactLandMark\": \"<string>\",\n    \"contactCity\": \"<string>\",\n    \"contactState\": \"<string>\",\n    \"contactPinCode\": \"<string>\",\n    \"adharNumber\": \"<string>\",\n    \"panNumber\": \"<string>\",\n    \"custmorGSTNumber\": \"<string>\",\n    \"custmorCountry\": \"<string>\",\n    \"custmorZipCode\": \"<string>\",\n    \"contactType\": 1\n  },\n  \"gstAmount\": {\n    \"discount\": \"<double>\",\n    \"totalAfterDiscount\": \"<double>\",\n    \"cgSt\": \"<double>\",\n    \"sgst\": \"<double>\",\n    \"igst\": \"<double>\",\n    \"grandTotal\": \"<double>\",\n    \"totalBeforeDiscount\": \"<double>\"\n  },\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 1,\n  \"dateofBill\": \"<dateTime>\",\n  \"firmDetail\": {\n    \"firmAddress\": \"<string>\",\n    \"firmGSTNumber\": \"<string>\",\n    \"firmName\": \"<string>\",\n    \"firmPhoneNumber\": \"<string>\"\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Quotation/CreateQuotation"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "CreateNewQuotation",
+							"item": [
+								{
+									"name": "/api/Quotation/CreateNewQuotation",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"consumerID\": \"<integer>\",\n  \"firmid\": \"<integer>\",\n  \"gstAmountID\": \"<integer>\",\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 2\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Quotation/CreateNewQuotation"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"consumerID\": \"<integer>\",\n  \"firmid\": \"<integer>\",\n  \"gstAmountID\": \"<integer>\",\n  \"productList\": [\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    },\n    {\n      \"description\": \"<string>\",\n      \"hsN_Code\": \"<string>\",\n      \"purity\": \"<string>\",\n      \"weight\": \"<double>\",\n      \"rate\": \"<double>\",\n      \"making_Charge\": \"<double>\",\n      \"amount\": \"<double>\"\n    }\n  ],\n  \"billid\": \"<integer>\",\n  \"billType\": 2\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{baseUrl}}/api/Quotation/CreateNewQuotation"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": \"<integer>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetAllQuotation",
+							"item": [
+								{
+									"name": "/api/Quotation/GetAllQuotation",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": "{{baseUrl}}/api/Quotation/GetAllQuotation"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": "{{baseUrl}}/api/Quotation/GetAllQuotation"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\",\n  \"data\": [\n    {\n      \"contactDetails\": {\n        \"contactPrifix\": \"<string>\",\n        \"contactFirstName\": \"<string>\",\n        \"contactLastName\": \"<string>\",\n        \"contactPhoneNumber\": \"<string>\",\n        \"contactAddress1\": \"<string>\",\n        \"contactAddress2\": \"<string>\",\n        \"contactLandMark\": \"<string>\",\n        \"contactCity\": \"<string>\",\n        \"contactState\": \"<string>\",\n        \"contactPinCode\": \"<string>\",\n        \"adharNumber\": \"<string>\",\n        \"panNumber\": \"<string>\",\n        \"custmorGSTNumber\": \"<string>\",\n        \"custmorCountry\": \"<string>\",\n        \"custmorZipCode\": \"<string>\",\n        \"contactType\": 2,\n        \"contactId\": \"<integer>\"\n      },\n      \"gstAmount\": {\n        \"discount\": \"<double>\",\n        \"totalAfterDiscount\": \"<double>\",\n        \"cgSt\": \"<double>\",\n        \"sgst\": \"<double>\",\n        \"igst\": \"<double>\",\n        \"grandTotal\": \"<double>\",\n        \"totalBeforeDiscount\": \"<double>\",\n        \"gstAmountId\": \"<integer>\"\n      },\n      \"productList\": [\n        {\n          \"description\": \"<string>\",\n          \"hsN_Code\": \"<string>\",\n          \"purity\": \"<string>\",\n          \"weight\": \"<double>\",\n          \"rate\": \"<double>\",\n          \"making_Charge\": \"<double>\",\n          \"amount\": \"<double>\",\n          \"productId\": \"<integer>\",\n          \"quotationId\": \"<integer>\"\n        },\n        {\n          \"description\": \"<string>\",\n          \"hsN_Code\": \"<string>\",\n          \"purity\": \"<string>\",\n          \"weight\": \"<double>\",\n          \"rate\": \"<double>\",\n          \"making_Charge\": \"<double>\",\n          \"amount\": \"<double>\",\n          \"productId\": \"<integer>\",\n          \"quotationId\": \"<integer>\"\n        }\n      ],\n      \"quotationId\": \"<integer>\",\n      \"billid\": \"<integer>\",\n      \"billType\": 2,\n      \"dateofBill\": \"<dateTime>\"\n    },\n    {\n      \"contactDetails\": {\n        \"contactPrifix\": \"<string>\",\n        \"contactFirstName\": \"<string>\",\n        \"contactLastName\": \"<string>\",\n        \"contactPhoneNumber\": \"<string>\",\n        \"contactAddress1\": \"<string>\",\n        \"contactAddress2\": \"<string>\",\n        \"contactLandMark\": \"<string>\",\n        \"contactCity\": \"<string>\",\n        \"contactState\": \"<string>\",\n        \"contactPinCode\": \"<string>\",\n        \"adharNumber\": \"<string>\",\n        \"panNumber\": \"<string>\",\n        \"custmorGSTNumber\": \"<string>\",\n        \"custmorCountry\": \"<string>\",\n        \"custmorZipCode\": \"<string>\",\n        \"contactType\": 2,\n        \"contactId\": \"<integer>\"\n      },\n      \"gstAmount\": {\n        \"discount\": \"<double>\",\n        \"totalAfterDiscount\": \"<double>\",\n        \"cgSt\": \"<double>\",\n        \"sgst\": \"<double>\",\n        \"igst\": \"<double>\",\n        \"grandTotal\": \"<double>\",\n        \"totalBeforeDiscount\": \"<double>\",\n        \"gstAmountId\": \"<integer>\"\n      },\n      \"productList\": [\n        {\n          \"description\": \"<string>\",\n          \"hsN_Code\": \"<string>\",\n          \"purity\": \"<string>\",\n          \"weight\": \"<double>\",\n          \"rate\": \"<double>\",\n          \"making_Charge\": \"<double>\",\n          \"amount\": \"<double>\",\n          \"productId\": \"<integer>\",\n          \"quotationId\": \"<integer>\"\n        },\n        {\n          \"description\": \"<string>\",\n          \"hsN_Code\": \"<string>\",\n          \"purity\": \"<string>\",\n          \"weight\": \"<double>\",\n          \"rate\": \"<double>\",\n          \"making_Charge\": \"<double>\",\n          \"amount\": \"<double>\",\n          \"productId\": \"<integer>\",\n          \"quotationId\": \"<integer>\"\n        }\n      ],\n      \"quotationId\": \"<integer>\",\n      \"billid\": \"<integer>\",\n      \"billType\": 1,\n      \"dateofBill\": \"<dateTime>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "DeleteQuotation",
+							"item": [
+								{
+									"name": "/api/Quotation/DeleteQuotation",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Quotation/DeleteQuotation?QuotationId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Quotation",
+												"DeleteQuotation"
+											],
+											"query": [
+												{
+													"key": "QuotationId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Quotation/DeleteQuotation?QuotationId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Quotation",
+														"DeleteQuotation"
+													],
+													"query": [
+														{
+															"key": "QuotationId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"hasErrors\": \"<boolean>\",\n  \"isSystemError\": \"<boolean>\",\n  \"message\": \"<string>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "/",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": "{{baseUrl}}/"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": "{{baseUrl}}/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "<string>"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
