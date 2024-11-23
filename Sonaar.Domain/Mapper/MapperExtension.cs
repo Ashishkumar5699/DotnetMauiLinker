@@ -10,6 +10,7 @@ namespace Sonaar.Domain.Mapper
         {
             services.AddAutoMapper(typeof(ContactProfile));
             services.AddAutoMapper(typeof(QuotationProfile));
+            services.AddAutoMapper(typeof(FirmProfile));
             return services;
         }
 
