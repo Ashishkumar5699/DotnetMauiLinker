@@ -11,5 +11,6 @@ public class GenerateQuotationDTO
     public required int Firmid { get; set; }
     public required int ConsumerID { get; set; }
     public required List<ProductModel> ProductList { get; set; }
-    public required GSTAmount GSTAmount { get; set; }
+    public GSTAmount GSTAmount { get; set; }
+    public int GSTAmountID {get;set;}
 }
