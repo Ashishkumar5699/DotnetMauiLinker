@@ -38,6 +38,8 @@ public static class ApiEndPoints
 
     public const string GenerateQuotation = "/api/Pdf/GenerateQuotation";
 
+    public const string GenerateQuotationWithID = "/api/Pdf/GenerateQuotationWithID";
+
     #endregion
 
     #region PreSale
