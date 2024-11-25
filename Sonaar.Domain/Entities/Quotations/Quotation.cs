@@ -10,7 +10,6 @@ namespace Sonaar.Domain.Entities.Quotations
     {
         [Key]
         public int QuotationId { get; set; }
-        
 
         public int Billid { get; set; }//random
 
@@ -28,5 +27,7 @@ namespace Sonaar.Domain.Entities.Quotations
 
         [ForeignKey("GstAmountId")]
         public required GstAmountEntity GSTAmount { get; set; }
+
+        public bool IsEnable { get; set;} = true;
     }
 }
