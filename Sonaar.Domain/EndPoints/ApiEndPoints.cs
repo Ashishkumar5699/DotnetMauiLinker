@@ -63,4 +63,8 @@ public static class ApiEndPoints
     public const string DeleteQuotation = "/api/Quotation/DeleteQuotation";
 
     #endregion
+
+    #region StatementConfiguration
+    public const string MonthlyQuatation = "api/Statement/MonthlyStatementQuotation";
+    #endregion
 }
