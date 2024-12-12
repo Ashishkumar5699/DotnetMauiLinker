@@ -34,8 +34,6 @@ public static class ApiEndPoints
 
     #region Pdf
 
-    public const string GeneratePDFGPT = "/api/Pdf/GeneratePDFGPT";
-
     public const string GenerateQuotation = "/api/Pdf/GenerateQuotation";
 
     public const string GenerateQuotationWithID = "/api/Pdf/GenerateQuotationWithID";
