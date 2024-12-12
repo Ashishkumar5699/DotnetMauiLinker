@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Sonaar.Domain.DataContexts;
@@ -11,9 +12,11 @@ using Sonaar.Domain.DataContexts;
 namespace Sonaar.Domain.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241125135334_UpdateQuotation")]
+    partial class UpdateQuotation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -113,18 +116,6 @@ namespace Sonaar.Domain.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("FirmId"));
 
-                    b.Property<string>("AccountHolder")
-                        .HasColumnType("text");
-
-                    b.Property<string>("AccountNumber")
-                        .HasColumnType("text");
-
-                    b.Property<string>("BankName")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Branch")
-                        .HasColumnType("text");
-
                     b.Property<string>("FirmAddress")
                         .HasColumnType("text");
 
@@ -135,9 +126,6 @@ namespace Sonaar.Domain.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("FirmPhoneNumber")
-                        .HasColumnType("text");
-
-                    b.Property<string>("IfscCode")
                         .HasColumnType("text");
 
                     b.HasKey("FirmId");
