@@ -19,7 +19,7 @@ namespace Sonaar.Domain.DataContexts
 
         public DbSet<ProductEntity> Products { get; set; }
 
-        public DbSet<Entities.PreSale.PreSaleEntity> PreSaleEntities { get; set; }
+        public DbSet<Entities.PreSale.PreSaleEntity> PreSaleBills { get; set; }
 
         public DbSet<Entities.Global.FirmEntities> FirmEntities { get; set; }
 
