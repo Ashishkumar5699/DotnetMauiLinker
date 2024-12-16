@@ -3,10 +3,9 @@ namespace Sonaar.Domain.Bills
 {
     public class GSTAmount
     {
-        public decimal Discount { get; set; }
-
-        public decimal TotalAfterDiscount { get; set; }
         
+        public decimal Total { get; set; }
+
         public decimal CGSt { get; set; }
 
         public decimal SGST { get; set; }
@@ -15,6 +14,5 @@ namespace Sonaar.Domain.Bills
 
         public decimal GrandTotal { get; set; }
 
-        public decimal TotalBeforeDiscount { get; set; }
     }
 }
