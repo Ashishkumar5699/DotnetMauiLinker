@@ -8,6 +8,9 @@ namespace Sonaar.Domain.Entities.Rate;
 
 public class RateEntity : RateDto
 {
+    [ForeignKey("Id")]
+    public required AppUser AddedBy { get; set; }
+    
     [Key]
     public int RateId { get; set; }
 }

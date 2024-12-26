@@ -63,10 +63,10 @@ public static class ApiEndPoints
     #endregion
 
     #region StatementConfiguration
-    public const string MonthlyQuatation = "api/Statement/MonthlyStatementQuotation";
+    public const string MonthlyQuatation = "/api/Statement/MonthlyStatementQuotation";
     #endregion
 
     #region Rate
-    public const string TodayRate = "api/Rate/TodayRate";
+    public const string TodayRate = "/api/Rate/TodayRate";
     #endregion
 }
