@@ -3,6 +3,7 @@ using Sonaar.Domain.Entities.Product;
 using Sonaar.Domain.Entities.Quotations;
 using Microsoft.EntityFrameworkCore;
 using Sonaar.Domain.Entities.Authentication;
+using Sonaar.Domain.Entities.Rate;
 
 namespace Sonaar.Domain.DataContexts
 {
@@ -22,6 +23,8 @@ namespace Sonaar.Domain.DataContexts
         public DbSet<Entities.PreSale.PreSaleEntity> PreSaleBills { get; set; }
 
         public DbSet<Entities.Global.FirmEntities> FirmEntities { get; set; }
+
+        public DbSet<RateEntity> RateEntities {get;set;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
