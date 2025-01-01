@@ -15,7 +15,7 @@ namespace Sonaar.Domain.Entities.Quotations
 
         public BillType BillType { get; set; } //emun
 
-        public DateTime DateofBill { get; set; }
+        public DateTime DateOfBill { get; set; }
 
         //public FirmDetail FirmDetail { get; set; }
 

@@ -17,6 +17,10 @@ namespace Sonaar.Domain.Mapper
 					.ForMember(dest => dest.ContactDetails, opt => opt.MapFrom(src => src.Consumer));
 			CreateMap<ProductModel, ProductEntity>();
 			CreateMap<GSTAmount, GstAmountEntity>();
+
+			CreateMap<ProductModel, PreSaleProductEntity>();
+
+
 		}
 	}
 }

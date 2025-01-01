@@ -20,5 +20,9 @@ public class RateDto
 
     public DateTime AddedOn { get; set; } 
 
-    public DateTime Expireon { get; set; } 
+
+    [ForeignKey("Id")]
+    public required AppUser AddedBy { get; set; }
+    
+    public DateTime ExpireOn { get; set; } 
 }

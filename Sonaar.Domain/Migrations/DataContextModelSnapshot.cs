@@ -153,16 +153,16 @@ namespace Sonaar.Domain.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("PreSaleId"));
 
-                    b.Property<int>("BillType")
+                    b.Property<int>("BillId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("Billid")
+                    b.Property<int>("BillType")
                         .HasColumnType("integer");
 
                     b.Property<int?>("ContactId")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("DateofBill")
+                    b.Property<DateTime>("DateOfBill")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("GstAmountId")
@@ -174,7 +174,44 @@ namespace Sonaar.Domain.Migrations
 
                     b.HasIndex("GstAmountId");
 
-                    b.ToTable("PreSaleEntities");
+                    b.ToTable("PreSaleBills");
+                });
+
+            modelBuilder.Entity("Sonaar.Domain.Entities.Product.PreSaleProductEntity", b =>
+                {
+                    b.Property<int>("PreSaleProductId")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<string>("HSN_Code")
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Making_Charge")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("PreSaleId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Purity")
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Rate")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("Weight")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("PreSaleProductId");
+
+                    b.ToTable("PreSaleProductEntity");
                 });
 
             modelBuilder.Entity("Sonaar.Domain.Entities.Product.ProductEntity", b =>
@@ -227,9 +264,6 @@ namespace Sonaar.Domain.Migrations
                     b.Property<decimal>("CGSt")
                         .HasColumnType("numeric");
 
-                    b.Property<decimal>("Discount")
-                        .HasColumnType("numeric");
-
                     b.Property<decimal>("GrandTotal")
                         .HasColumnType("numeric");
 
@@ -239,10 +273,7 @@ namespace Sonaar.Domain.Migrations
                     b.Property<decimal>("SGST")
                         .HasColumnType("numeric");
 
-                    b.Property<decimal>("TotalAfterDiscount")
-                        .HasColumnType("numeric");
-
-                    b.Property<decimal>("TotalBeforeDiscount")
+                    b.Property<decimal>("Total")
                         .HasColumnType("numeric");
 
                     b.HasKey("GstAmountId");
@@ -267,7 +298,7 @@ namespace Sonaar.Domain.Migrations
                     b.Property<int?>("ContactId")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("DateofBill")
+                    b.Property<DateTime>("DateOfBill")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("GstAmountId")
@@ -285,6 +316,48 @@ namespace Sonaar.Domain.Migrations
                     b.ToTable("Quotations");
                 });
 
+            modelBuilder.Entity("Sonaar.Domain.Entities.Rate.RateEntity", b =>
+                {
+                    b.Property<int>("RateId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("RateId"));
+
+                    b.Property<DateTime>("AddedOn")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("ExpireOn")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("Gold14K")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("Gold18K")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("Gold22K")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("Gold24K")
+                        .HasColumnType("numeric");
+
+                    b.Property<int?>("Id")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("Silver70")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal>("Silver925")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("RateId");
+
+                    b.HasIndex("Id");
+
+                    b.ToTable("RateEntities");
+                });
+
             modelBuilder.Entity("Sonaar.Domain.Entities.PreSale.PreSaleEntity", b =>
                 {
                     b.HasOne("Sonaar.Domain.Entities.Contacts.ContactDetails", "ContactDetails")
@@ -300,21 +373,24 @@ namespace Sonaar.Domain.Migrations
                     b.Navigation("GSTAmount");
                 });
 
-            modelBuilder.Entity("Sonaar.Domain.Entities.Product.ProductEntity", b =>
+            modelBuilder.Entity("Sonaar.Domain.Entities.Product.PreSaleProductEntity", b =>
                 {
                     b.HasOne("Sonaar.Domain.Entities.PreSale.PreSaleEntity", "PreSaleEntity")
                         .WithMany("ProductList")
-                        .HasForeignKey("QuotationId")
+                        .HasForeignKey("PreSaleProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("PreSaleEntity");
+                });
+
+            modelBuilder.Entity("Sonaar.Domain.Entities.Product.ProductEntity", b =>
+                {
                     b.HasOne("Sonaar.Domain.Entities.Quotations.Quotation", "Quotation")
                         .WithMany("ProductList")
                         .HasForeignKey("QuotationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("PreSaleEntity");
 
                     b.Navigation("Quotation");
                 });
@@ -332,6 +408,15 @@ namespace Sonaar.Domain.Migrations
                     b.Navigation("ContactDetails");
 
                     b.Navigation("GSTAmount");
+                });
+
+            modelBuilder.Entity("Sonaar.Domain.Entities.Rate.RateEntity", b =>
+                {
+                    b.HasOne("Sonaar.Domain.Entities.Authentication.AppUser", "AddedBy")
+                        .WithMany()
+                        .HasForeignKey("Id");
+
+                    b.Navigation("AddedBy");
                 });
 
             modelBuilder.Entity("Sonaar.Domain.Entities.PreSale.PreSaleEntity", b =>

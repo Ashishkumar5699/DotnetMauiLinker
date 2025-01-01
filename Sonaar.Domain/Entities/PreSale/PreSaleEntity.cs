@@ -14,19 +14,17 @@ public partial class PreSaleEntity
     [Key]
     public int PreSaleId { get; set; }
 
-    public int Billid { get; set; }
+    public int BillId { get; set; }
 
     public BillType BillType { get; set; }
 
-    public DateTime DateofBill { get; set; }
-
-    //public FirmDetail FirmDetail { get; set; }
+    public DateTime DateOfBill { get; set; }
 
     [ForeignKey("ContactId")]
     public required ContactDetails ContactDetails { get; set; }
 
     [ForeignKey("ProductId")]
-    public required List<ProductEntity> ProductList { get; set; }
+    public required List<PreSaleProductEntity> ProductList { get; set; }
 
     [ForeignKey("GstAmountId")]
     public required GstAmountEntity GSTAmount { get; set; }

@@ -36,7 +36,7 @@ namespace Sonaar.Domain.DataContexts
              modelBuilder.Entity<Entities.PreSale.PreSaleEntity>()
             .HasMany(q => q.ProductList)
             .WithOne(p => p.PreSaleEntity)
-            .HasForeignKey(p => p.QuotationId);
+            .HasForeignKey(p => p.PreSaleProductId);
         }
     }
 }

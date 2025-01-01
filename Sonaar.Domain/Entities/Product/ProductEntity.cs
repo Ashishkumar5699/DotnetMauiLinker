@@ -17,8 +17,8 @@ namespace Sonaar.Domain.Entities.Product
         [JsonIgnore]
         public Quotation Quotation { get; set; } // Navigation property
 
-        [JsonIgnore]
-        public PreSaleEntity PreSaleEntity { get; set; } // Navigation property
+        // [JsonIgnore]
+        // public PreSaleEntity PreSaleEntity { get; set; } // Navigation property
     }
 }
 
