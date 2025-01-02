@@ -38,6 +38,9 @@ public static class ApiEndPoints
 
     public const string GenerateQuotationWithID = "/api/Pdf/GenerateQuotationWithID";
 
+    public static string GenerateInvoiceWithID = "/api/Pdf/GenerateInvoiceWithID";
+
+
     #endregion
 
     #region PreSale
@@ -68,5 +71,6 @@ public static class ApiEndPoints
 
     #region Rate
     public const string TodayRate = "/api/Rate/TodayRate";
+
     #endregion
 }
